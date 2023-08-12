@@ -1,0 +1,30 @@
+.main-content {
+  width: min(96%, 600px);
+  margin-bottom: 10%;
+  padding: 50px;
+}
+
+.main-wrapper {
+  height: calc(100vh - 80px);
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.main-content h1 {
+  margin-bottom: 10px;
+}
+
+.main-content section {
+  margin: 20px 0px;
+}
+
+.main-content h4 {
+  margin: 10px 0px;
+}
+
+.latest-work {
+  border: 1px solid grey;
+  border-radius: 6px;
+  padding: 20px;
+}

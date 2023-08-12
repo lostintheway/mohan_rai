@@ -1,0 +1,19 @@
+.navbar {
+  gap: 40px;
+  width: 95%;
+  display: flex;
+  list-style: none;
+  height: 80px;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  justify-content: end;
+  padding-right: 5%;
+  border-bottom: 1px solid grey;
+  font-weight: 500;
+}
+
+.navbar li {
+  cursor: pointer;
+}
