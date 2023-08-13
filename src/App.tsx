@@ -1,4 +1,4 @@
-import MainContent from "./pages/MainContent";
+import MainContent from "./pages/HomePage";
 import "./App.css";
 import Navbar from "./components/ui/Navbar";
 

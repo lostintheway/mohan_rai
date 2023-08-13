@@ -1,4 +1,4 @@
-import "./MainContent.css";
+import "./HomePage.css";
 import Mohan from "../../../public/mohan_rai.jpg";
 
 const MainContent = () => {
@@ -18,9 +18,9 @@ const MainContent = () => {
         <h4>All of Us in Our Own Lives</h4>
         She is currently at work on a novel and a mixed-media work of
         nonfiction.
-        <div className="latest-work">
+        {/* <div className="latest-work">
           <h4>Latest Work:</h4>
-        </div>
+        </div> */}
       </div>
     </div>
   );

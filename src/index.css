@@ -1,13 +1,19 @@
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
   font-weight: 400;
   margin: 0;
+  --border-bottom: rgb(212, 212, 212);
+  --main-color: #0d9d61;
+}
+
+html,
+body {
+  color-scheme: white;
 }
 
 body {
   margin: 0;
-  background-color: #f7f9fc;
+  background-color: hsla(222, 42%, 95%, 0.475);
 }
 /* a {
   font-weight: 500;

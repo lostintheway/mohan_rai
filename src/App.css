@@ -1,8 +1,13 @@
 .avatar {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   vertical-align: middle;
+}
+
+h1,
+h4 {
+  color: #0d9d61;
 }
 
 /* .logo {
