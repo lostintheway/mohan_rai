@@ -5,6 +5,11 @@
 }
 
 .main-wrapper {
+  background: radial-gradient(
+    circle,
+    rgb(235, 247, 255) 0%,
+    hsla(0, 0%, 100%, 1) 100%
+  );
   margin-top: -40px;
   height: calc(100vh - 80px);
   width: 100%;
@@ -29,4 +34,10 @@
   border: 1px solid grey;
   border-radius: 6px;
   padding: 20px;
+}
+
+@media (max-width: 750px) {
+  .main-wrapper {
+    flex-flow: column-reverse;
+  }
 }

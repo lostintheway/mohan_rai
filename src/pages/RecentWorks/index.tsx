@@ -5,7 +5,7 @@ import "./RecentWorks.css";
 export function RecentWorks() {
   return (
     <div className="recent-works-wrapper">
-      <h1>Recent Works</h1>
+      <h2>Recent Works</h2>
       <div className="recent-works">
         <CardImage
           imageUrl={Mahanagar}

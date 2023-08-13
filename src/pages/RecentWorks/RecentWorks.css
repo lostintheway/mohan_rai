@@ -7,6 +7,8 @@
 }
 
 .recent-works-wrapper {
+  padding-top: 50px;
+  border-top: 1px solid var(--border-bottom);
   background-color: white;
   width: 100%;
   display: flex;

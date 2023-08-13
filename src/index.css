@@ -3,7 +3,7 @@
   font-weight: 400;
   margin: 0;
   --border-bottom: rgb(227, 227, 227);
-  --main-color: rgb(14, 165, 234);
+  --main-color: rgb(2, 98, 135);
 }
 
 html,
@@ -16,8 +16,9 @@ body {
   height: 100vh;
   overflow-x: hidden;
   margin: 0;
-  background-color: hsla(222, 42%, 95%, 0.475);
+  /* background-color: hsla(222, 42%, 95%, 0.475); */
 }
+
 /* a {
   font-weight: 500;
   color: #646cff;
