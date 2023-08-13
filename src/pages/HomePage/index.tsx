@@ -1,5 +1,5 @@
 import "./HomePage.css";
-import Mohan from "../../../public/mohan_rai.jpg";
+import Mohan from "../../../public/mohan.png";
 
 const MainContent = () => {
   return (
