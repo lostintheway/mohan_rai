@@ -12,7 +12,7 @@ function CardImage({ imageUrl, title, description }: Props) {
       <div className="image-card">
         <img src={imageUrl} alt={title} />
         <div className="overlay">
-          <h3>{title}</h3>
+          <b>{title}</b>
           <p>{description}</p>
         </div>
       </div>
