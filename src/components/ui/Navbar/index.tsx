@@ -1,10 +1,21 @@
 import "./Navbar.css";
 import "./BurgerMenu.css";
 import MenuIcon from "../../../../public/menu.svg";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
+  const handleResize = () => {
+    if (window.innerWidth > 780) {
+      setShowMenu(false);
+    }
+  };
+  useEffect(() => {
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   const handleMenu = () => {
     setShowMenu((prev) => !prev);

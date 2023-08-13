@@ -1,9 +1,9 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Noto Sans", sans-serif;
   font-weight: 400;
   margin: 0;
-  --border-bottom: rgb(212, 212, 212);
-  --main-color: #0d9d61;
+  --border-bottom: rgb(227, 227, 227);
+  --main-color: rgb(14, 165, 234);
 }
 
 html,
@@ -12,6 +12,9 @@ body {
 }
 
 body {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
   margin: 0;
   background-color: hsla(222, 42%, 95%, 0.475);
 }

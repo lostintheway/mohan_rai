@@ -11,9 +11,6 @@ const MainContent = () => {
           opportunities as a fellow film developer. Let's explore how our shared
           passion can lead to exciting projects.
         </p>
-        <section>
-          <img src={Mohan} alt="Avatar" className="avatar" />
-        </section>
         Manjushree Thapa's latest novel is
         <h4>All of Us in Our Own Lives</h4>
         She is currently at work on a novel and a mixed-media work of
@@ -22,6 +19,9 @@ const MainContent = () => {
           <h4>Latest Work:</h4>
         </div> */}
       </div>
+      <section>
+        <img src={Mohan} alt="Avatar" className="avatar" />
+      </section>
     </div>
   );
 };
