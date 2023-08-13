@@ -1,8 +1,4 @@
-import React from "react";
-
-type Props = {};
-
-const CardRecent = (props: Props) => {
+const CardRecent = () => {
   return <div>CardRecent</div>;
 };
 

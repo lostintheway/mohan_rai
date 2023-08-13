@@ -1,4 +1,3 @@
-import React from "react";
 import "./CardImage.css"; // Import your CSS file for styling
 
 type Props = {
