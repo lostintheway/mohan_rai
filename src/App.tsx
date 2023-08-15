@@ -8,7 +8,7 @@ import { RecentWorks } from "./pages/RecentWorks";
 import CardImage from "./components/ui/CardImage";
 import Mahanagar from "../public/mahanagar.jpg";
 import Contact from "./pages/Contact";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import UpIcon from "./assets/icons/up.svg";
 
 function App() {
@@ -21,6 +21,43 @@ function App() {
       setShowButton(false);
     }
   };
+  const slideUpRef = useRef(null);
+  const slideUpRef2 = useRef(null);
+
+  useEffect(() => {
+    const element = slideUpRef.current;
+    const element2 = slideUpRef2.current;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("slide-up");
+          } else {
+            entry.target.classList.remove("slide-up"); // Reset animation
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
+
+    if (element) {
+      observer.observe(element);
+    }
+
+    if (element2) {
+      observer.observe(element2);
+    }
+
+    return () => {
+      if (element) {
+        observer.unobserve(element);
+      }
+      if (element2) {
+        observer.unobserve(element2);
+      }
+    };
+  }, []);
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
@@ -33,15 +70,6 @@ function App() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  // return (
-  //   <button
-  //     className={`scroll-to-top-button ${showButton ? 'visible' : ''}`}
-  //     onClick={scrollToTop}
-  //   >
-  //     Scroll to Top
-  //   </button>
-  // );
-
   return (
     <div className="my-app" id="home">
       <button
@@ -52,7 +80,7 @@ function App() {
       </button>
       <Navbar />
       <div className="main" id="home">
-        <MainContent />
+        <MainContent slideRef={slideUpRef} />
         <RecentWorks />
         <div className="short-stories">
           <h3>SHORT STORIES</h3>
@@ -86,7 +114,7 @@ function App() {
               description="An impressive city skyline at night."
             />
           </div>
-          <Contact />
+          <Contact slideRef={slideUpRef2} />
         </div>
       </div>
     </div>

@@ -1,41 +1,15 @@
 import "./HomePage.css";
 import Mohan from "../../../public/mohan.png";
-import { useEffect, useRef } from "react";
 
-const MainContent = () => {
-  const elementRef = useRef(null);
+type Props = {
+  slideRef: React.MutableRefObject<null>;
+};
 
-  useEffect(() => {
-    const element = elementRef.current;
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("slide-up");
-          } else {
-            entry.target.classList.remove("slide-up"); // Reset animation
-          }
-        });
-      },
-      { threshold: 0.5 }
-    );
-
-    if (element) {
-      observer.observe(element);
-    }
-
-    return () => {
-      if (element) {
-        observer.unobserve(element);
-      }
-    };
-  }, []);
-
+const MainContent = ({ slideRef }: Props) => {
   return (
     <div className="main-wrapper">
       <div className={"main-content"}>
-        <div ref={elementRef} className="slide-up-container">
+        <div ref={slideRef} className="slide-up-container">
           <h1>Mohan Rai</h1>
           <p>
             Hello, I'm reaching out to discuss potential collaboration

@@ -1,12 +1,15 @@
 import "./Contact.css";
+type Props = {
+  slideRef: React.MutableRefObject<null>;
+};
 
-const Contact = () => {
+const Contact = ({ slideRef }: Props) => {
   return (
     <>
       <div className="contact-wrapper" id="contact">
         <div className="contact">
           <h2>Contact</h2>
-          <div className="contact-content">
+          <div ref={slideRef} className="contact-content slide-up-container">
             <div>
               <h4>Work:</h4>
               <b>Middleway Films</b> <br />
