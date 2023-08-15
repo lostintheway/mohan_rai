@@ -1,6 +1,6 @@
 import "./HomePage.css";
 import Mohan from "../../../public/mohan.png";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 
 const MainContent = () => {
   const elementRef = useRef(null);
