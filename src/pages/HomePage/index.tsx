@@ -34,7 +34,7 @@ const MainContent = () => {
 
   return (
     <div className="main-wrapper">
-      <div className={"main-content "}>
+      <div className={"main-content"}>
         <div ref={elementRef} className="slide-up-container">
           <h1>Mohan Rai</h1>
           <p>

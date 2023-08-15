@@ -27,8 +27,7 @@ const Navbar = () => {
   return (
     <div className="nav-wrapper">
       <ul className="navbar">
-        {/* <li>HOME</li> */}
-
+        <ScrollTo title="HOME" targetId="home" />
         <ScrollTo title="FICTION" targetId="fiction" />
         <ScrollTo title="NONFICTION" targetId="nonfiction" />
 

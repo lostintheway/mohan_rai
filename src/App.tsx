@@ -43,7 +43,7 @@ function App() {
   // );
 
   return (
-    <div id="my-app">
+    <div className="my-app" id="home">
       <button
         className={`scroll-to-top-button ${showButton ? "visible" : ""}`}
         onClick={scrollToTop}
