@@ -1,24 +1,70 @@
 import MainContent from "./pages/HomePage";
 import "./App.css";
 import "./pages/RecentWorks/RecentWorks.css";
+import "./assets/css/slide-up.css";
+import "./assets/css/scroll-to-top.css";
 import Navbar from "./components/ui/Navbar";
 import { RecentWorks } from "./pages/RecentWorks";
 import CardImage from "./components/ui/CardImage";
 import Mahanagar from "../public/mahanagar.jpg";
 import Contact from "./pages/Contact";
+import { Slide } from "react-awesome-reveal";
+import { useState, useEffect } from "react";
+import UpIcon from "./assets/icons/up.svg";
 
 function App() {
+  const [showButton, setShowButton] = useState(false);
+
+  const handleScroll = () => {
+    if (window.scrollY > 100) {
+      setShowButton(true);
+    } else {
+      setShowButton(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  // return (
+  //   <button
+  //     className={`scroll-to-top-button ${showButton ? 'visible' : ''}`}
+  //     onClick={scrollToTop}
+  //   >
+  //     Scroll to Top
+  //   </button>
+  // );
+
   return (
     <div id="my-app">
+      <button
+        className={`scroll-to-top-button ${showButton ? "visible" : ""}`}
+        onClick={scrollToTop}
+      >
+        <img src={UpIcon} alt="up icon" width={20} height={"auto"} />
+      </button>
       <Navbar />
       <div className="main">
         <MainContent />
         <RecentWorks />
         <div className="short-stories">
-          <h3>SHORT STORIES</h3>
-          Manjushree Thapa’s short stories have appeared in Manoa, Tampa Review,
-          The Journal, Artful Dodge, Bellingham Review, Other Voices, Himal
-          South Asian and Studies in Nepali History and Society.
+          <Slide direction="right">
+            <h3>SHORT STORIES</h3>
+            <p>
+              Manjushree Thapa's short stories have appeared in Manoa, Tampa
+              Review, The Journal, Artful Dodge, Bellingham Review, Other
+              Voices, Himal South Asian and Studies in Nepali History and
+              Society.
+            </p>
+          </Slide>
         </div>
         <div className="recent-works-wrapper">
           <h2>Nonfiction</h2>
