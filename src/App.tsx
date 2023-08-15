@@ -8,7 +8,6 @@ import { RecentWorks } from "./pages/RecentWorks";
 import CardImage from "./components/ui/CardImage";
 import Mahanagar from "../public/mahanagar.jpg";
 import Contact from "./pages/Contact";
-import { Slide } from "react-awesome-reveal";
 import { useState, useEffect } from "react";
 import UpIcon from "./assets/icons/up.svg";
 
@@ -56,15 +55,12 @@ function App() {
         <MainContent />
         <RecentWorks />
         <div className="short-stories">
-          <Slide direction="right">
-            <h3>SHORT STORIES</h3>
-            <p>
-              Manjushree Thapa's short stories have appeared in Manoa, Tampa
-              Review, The Journal, Artful Dodge, Bellingham Review, Other
-              Voices, Himal South Asian and Studies in Nepali History and
-              Society.
-            </p>
-          </Slide>
+          <h3>SHORT STORIES</h3>
+          <p>
+            Manjushree Thapa's short stories have appeared in Manoa, Tampa
+            Review, The Journal, Artful Dodge, Bellingham Review, Other Voices,
+            Himal South Asian and Studies in Nepali History and Society.
+          </p>
         </div>
         <div className="recent-works-wrapper" id="nonfiction">
           <h2>Non-Fiction</h2>
