@@ -1,6 +1,6 @@
-type Props = { targetId: string; title: string };
+type Props = { targetId: string; title: string; onClick?: () => void };
 
-const ScrollTo = ({ targetId, title }: Props) => {
+const ScrollTo = ({ targetId, title, onClick }: Props) => {
   const handleClick = () => {
     const targetElement = document.getElementById(targetId);
     if (targetElement) {
@@ -8,6 +8,9 @@ const ScrollTo = ({ targetId, title }: Props) => {
       const y =
         targetElement.getBoundingClientRect().top + window.scrollY + yOffset;
       window.scrollTo({ top: y, behavior: "smooth" });
+    }
+    if (onClick) {
+      onClick();
     }
   };
 

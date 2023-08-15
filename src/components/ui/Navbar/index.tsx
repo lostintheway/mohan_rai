@@ -24,6 +24,10 @@ const Navbar = () => {
     setShowMenu((prev) => !prev);
   };
 
+  const handleBurgerClick = () => {
+    setShowMenu(false);
+  };
+
   return (
     <div className="nav-wrapper">
       <ul className="navbar">
@@ -40,14 +44,26 @@ const Navbar = () => {
       </button>
 
       <ul className={`nav-burger ${showMenu ? "show" : ""}`}>
-        <ScrollTo title="HOME" targetId="home" />
+        <ScrollTo onClick={handleBurgerClick} title="HOME" targetId="home" />
 
-        <ScrollTo title="FICTION" targetId="fiction" />
-        <ScrollTo title="NONFICTION" targetId="nonfiction" />
+        <ScrollTo
+          onClick={handleBurgerClick}
+          title="FICTION"
+          targetId="fiction"
+        />
+        <ScrollTo
+          onClick={handleBurgerClick}
+          title="NONFICTION"
+          targetId="nonfiction"
+        />
 
         <li>TRANSLATION</li>
         <li>OTHER WORK</li>
-        <ScrollTo title="CONTACT" targetId="contact" />
+        <ScrollTo
+          onClick={handleBurgerClick}
+          title="CONTACT"
+          targetId="contact"
+        />
         {/* Burger menu items */}
       </ul>
     </div>
