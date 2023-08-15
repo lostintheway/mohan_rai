@@ -1,14 +1,16 @@
 .nav-wrapper {
-  position: relative;
+  /* position: relative; */
 }
 
 #burger-menu {
   background: none;
+  position: relative;
   border: none;
-  position: absolute;
+  /* position: absolute; */
   /* top: 10px; */
-  right: 10px;
-  margin-top: 10px;
+  /* right: 10px;
+  */
+  padding-right: 20px;
 }
 
 .nav-burger {
@@ -23,6 +25,7 @@
   transform: translateX(100%);
   transition: transform 0.5s ease-in-out;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 30;
 }
 
 .nav-burger.show {

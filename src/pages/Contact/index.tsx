@@ -3,7 +3,7 @@ import "./Contact.css";
 const Contact = () => {
   return (
     <>
-      <div className="contact-wrapper">
+      <div className="contact-wrapper" id="contact">
         <div className="contact">
           <h2>Contact</h2>
           <div className="contact-content">
@@ -22,7 +22,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <div className="copyright">@Copyright - Mohan Rai 2023</div>
+      <div className="copyright">© Copyright - Mohan Rai 2023</div>
     </>
   );
 };

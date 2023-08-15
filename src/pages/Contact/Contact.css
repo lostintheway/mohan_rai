@@ -1,4 +1,12 @@
 .contact-wrapper {
+  background-image: linear-gradient(
+    to right top,
+    hsla(0, 0%, 60%, 0.08),
+    hsla(0, 0%, 60%, 0.25),
+    hsla(0, 0%, 60%, 0.09),
+    hsla(0, 0%, 60%, 0.1),
+    hsla(0, 0%, 60%, 0.4)
+  );
   width: 100vw;
   display: flex;
   justify-content: center;
@@ -27,7 +35,7 @@
 }
 
 .copyright {
-  color: rgb(148, 148, 148);
+  color: rgb(185, 185, 185);
   width: 100vw;
   background-color: rgb(34, 34, 34);
   height: 30px;

@@ -52,7 +52,7 @@ function App() {
         <img src={UpIcon} alt="up icon" width={20} height={"auto"} />
       </button>
       <Navbar />
-      <div className="main">
+      <div className="main" id="home">
         <MainContent />
         <RecentWorks />
         <div className="short-stories">
@@ -66,8 +66,8 @@ function App() {
             </p>
           </Slide>
         </div>
-        <div className="recent-works-wrapper">
-          <h2>Nonfiction</h2>
+        <div className="recent-works-wrapper" id="nonfiction">
+          <h2>Non-Fiction</h2>
           <div className="recent-works">
             <CardImage
               imageUrl={Mahanagar}

@@ -4,8 +4,8 @@ import "./RecentWorks.css";
 
 export function RecentWorks() {
   return (
-    <div className="recent-works-wrapper">
-      <h2>Recent Works</h2>
+    <div className="recent-works-wrapper" id="fiction">
+      <h2>Fiction</h2>
       <div className="recent-works">
         {/* <Slide direction="left" duration={800}> */}
         <CardImage
