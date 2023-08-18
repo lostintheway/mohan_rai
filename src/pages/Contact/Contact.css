@@ -1,11 +1,16 @@
 .contact-wrapper {
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     to right top,
     hsla(0, 0%, 60%, 0.08),
-    hsla(0, 0%, 60%, 0.25),
+    hsla(0, 0%, 60%, 0.4),
     hsla(0, 0%, 60%, 0.09),
     hsla(0, 0%, 60%, 0.1),
-    hsla(0, 0%, 60%, 0.4)
+    hsla(0, 0%, 60%, 0.6)
+  ); */
+  background: radial-gradient(
+    circle,
+    hsla(218, 58%, 96%, 0.595) 0%,
+    hsla(226, 66%, 91%, 0.442) 60%
   );
   width: 100vw;
   display: flex;
