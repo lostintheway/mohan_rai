@@ -3,13 +3,13 @@ import "./App.css";
 import "./pages/RecentWorks/RecentWorks.css";
 import "./assets/css/slide-up.css";
 import "./assets/css/scroll-to-top.css";
-import Navbar from "./components/ui/Navbar";
 import { RecentWorks } from "./pages/RecentWorks";
 import CardImage from "./components/ui/CardImage";
 import Mahanagar from "../public/mahanagar.jpg";
 import Contact from "./pages/Contact";
 import { useState, useEffect, useRef } from "react";
 import UpIcon from "./assets/icons/up.svg";
+import NavBar from "./components/ui/NavBar/Navbar";
 
 function App() {
   const [showButton, setShowButton] = useState(false);
@@ -78,7 +78,7 @@ function App() {
       >
         <img src={UpIcon} alt="up icon" width={20} height={"auto"} />
       </button>
-      <Navbar />
+      <NavBar />
       <div className="main" id="home">
         <MainContent slideRef={slideUpRef} />
         <RecentWorks />

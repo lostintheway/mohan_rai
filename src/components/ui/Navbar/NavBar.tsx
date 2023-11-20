@@ -1,10 +1,10 @@
-import "./Navbar.css";
+import "./NavBar.css";
 import "./BurgerMenu.css";
 import MenuIcon from "../../../../public/menu.svg";
 import { useEffect, useState } from "react";
 import ScrollTo from "../../ScrollTo";
 
-const Navbar = () => {
+const NavBar = () => {
   const [showMenu, setShowMenu] = useState(false);
 
   const handleResize = () => {
@@ -70,4 +70,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default NavBar;
