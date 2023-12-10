@@ -9,7 +9,7 @@ import Mahanagar from "../public/mahanagar.jpg";
 import Contact from "./pages/Contact";
 import { useState, useEffect, useRef } from "react";
 import UpIcon from "./assets/icons/up.svg";
-import NavBar from "./components/ui/NavBar/Navbar";
+import NavBar from "./components/ui/NavBar/NavBar";
 
 function App() {
   const [showButton, setShowButton] = useState(false);
