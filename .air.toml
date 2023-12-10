@@ -1,0 +1,14 @@
+# .air.toml
+
+[build]
+binary = "your-binary-name"
+exclude = [".git", "tmp", "notes.txt"]
+
+[build.command]
+go = "build"
+
+[build.args]
+go = ["build", "-o", "tmp/main"]
+
+[runner]
+binary = "tmp/main"

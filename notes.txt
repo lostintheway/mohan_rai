@@ -1,0 +1,18 @@
+GOOS=linux GOARCH=amd64 go build -o app_name
+In Windows Command Prompt, you can use the set command to temporarily set the
+ environment variables before running the go build command. Here's an example:
+
+bash
+Copy code
+
+
+set GOOS=linux
+set GOARCH=amd64
+go build -o output_name
+
+// back to Windows
+set GOOS=windows
+set GOARCH=amd64
+
+//path to fly
+C:\Users\sushil\.fly\bin

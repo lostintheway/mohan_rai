@@ -1,3 +1,6 @@
 tmp/
 .env
 go.sum
+main
+build
+mohanrai

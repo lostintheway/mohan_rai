@@ -32,6 +32,7 @@ func SetupRoutes() http.Handler {
 		r.Get("/mohans/{type}/{status}", handlers.GetMohansType)
 		r.Get("/mohan/{id}", handlers.GetMohan)
 		r.Post("/mohan", handlers.CreateMohan)
+		r.Post("/mohan/upload", handlers.UploadToCloudFlare)
 
 	})
 
