@@ -90,6 +90,7 @@ func UpdateMohan(w http.ResponseWriter, r *http.Request) {
 
 	// Decode the JSON request body into the updatedMohan struct
 	err := json.NewDecoder(r.Body).Decode(&updatedMohan)
+
 	if err != nil {
 		http.Error(w, err.Error(), http.StatusBadRequest)
 		return

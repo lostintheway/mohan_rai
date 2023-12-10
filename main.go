@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"io"
 	"log"
 	"mohanrai/db"
 	"mohanrai/routes"
@@ -24,6 +25,19 @@ func apiKeyMiddleware(next http.Handler) http.Handler {
 }
 
 func main() {
+	// Create a log file
+	logFile, err := os.OpenFile("log.txt", os.O_RDWR|os.O_CREATE|os.O_APPEND, 0666)
+	if err != nil {
+		fmt.Printf("error opening file: %v", err)
+	}
+	defer logFile.Close()
+
+	// Create a multi writer to log to both file and console
+	multi := io.MultiWriter(os.Stdout, logFile)
+
+	// Set the output of the logger to the multi writer
+	log.SetOutput(multi)
+	// log.Println("thie is test")
 
 	if err := godotenv.Load(); err != nil {
 		log.Fatalf("failed to load environment variables: %v", err)
@@ -40,10 +54,9 @@ func main() {
 		AllowedHeaders:   []string{"*"},
 	}).Handler(apiKeyMiddleware(r))
 
+	log.Println("Starting server on http://localhost:5000")
 	if err := http.ListenAndServe(":5000", handler); err != nil {
 		log.Fatalf("failed to start the server: %v", err)
-	} else {
-		fmt.Println("Server started on port http://localhost:5000")
 	}
 
 }

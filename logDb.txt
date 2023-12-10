@@ -1,0 +1,15 @@
+
+2023/12/11 01:13:37 F:/my_projects/mohan_rai_portfolio/mohanrai_go/handlers/handlers.go:50
+[39.826ms] [rows:2] SELECT * FROM `mohans` WHERE Type = 'main_content' AND Status = '1'
+
+2023/12/11 01:13:38 F:/my_projects/mohan_rai_portfolio/mohanrai_go/handlers/handlers.go:50
+[41.486ms] [rows:2] SELECT * FROM `mohans` WHERE Type = 'main_content' AND Status = '1'
+
+2023/12/11 01:13:38 F:/my_projects/mohan_rai_portfolio/mohanrai_go/handlers/handlers.go:50
+[41.990ms] [rows:2] SELECT * FROM `mohans` WHERE Type = 'main_content' AND Status = '1'
+
+2023/12/11 01:13:38 F:/my_projects/mohan_rai_portfolio/mohanrai_go/handlers/handlers.go:50
+[43.466ms] [rows:2] SELECT * FROM `mohans` WHERE Type = 'main_content' AND Status = '1'
+
+2023/12/11 01:13:38 F:/my_projects/mohan_rai_portfolio/mohanrai_go/handlers/handlers.go:50
+[42.994ms] [rows:2] SELECT * FROM `mohans` WHERE Type = 'main_content' AND Status = '1'
