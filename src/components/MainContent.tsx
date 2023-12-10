@@ -1,5 +1,6 @@
-import "./HomePage.css";
+import "./MainContent.css";
 import Mohan from "../../../public/mohan.png";
+import Image from "next/image";
 
 type Props = {
   slideRef: React.MutableRefObject<null>;
@@ -13,9 +14,9 @@ const MainContent = ({ slideRef }: Props) => {
           <h1 style={{ fontSize: 40, marginBottom: 0 }}>Mohan Rai</h1>
           <h4 style={{ color: "grey", marginTop: 5 }}>Film Director</h4>
           <p>
-            Hello, I'm reaching out to discuss potential collaboration
-            opportunities as a fellow film developer. Let's explore how our
-            shared passion can lead to exciting projects.
+            Hello, reaching out to discuss potential collaboration opportunities
+            as a fellow film developer. s explore how our shared passion can
+            lead to exciting projects.
           </p>
           My latest movie is
           <h4>All of Us in Our Own Lives</h4>I am currently at work on a novel
@@ -26,7 +27,16 @@ const MainContent = ({ slideRef }: Props) => {
         </div> */}
       </div>
       <section>
-        <img src={Mohan} alt="Avatar" className="avatar" />
+        <Image
+          src={
+            "https://pub-0198217282574dada06155209c57c678.r2.dev/mohanraifinal.jpg"
+          }
+          alt="Avatar"
+          className="avatar"
+          width={100}
+          height={100}
+          quality={100}
+        />
       </section>
     </div>
   );

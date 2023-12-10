@@ -1,8 +1,11 @@
+"use client";
+
 import "./NavBar.css";
 import "./BurgerMenu.css";
-import MenuIcon from "../../../../public/menu.svg";
+import MenuIcon from "../../assets/icons/menu.svg";
 import { useEffect, useState } from "react";
-import ScrollTo from "../../ScrollTo";
+import ScrollTo from "../ScrollTo";
+import Image from "next/image";
 
 const NavBar = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -40,7 +43,7 @@ const NavBar = () => {
         <ScrollTo title="CONTACT" targetId="contact" />
       </ul>
       <button id="burger-menu" onClick={handleMenu}>
-        <img src={MenuIcon} alt="" width={40} />
+        <Image src={MenuIcon} alt="" width={40} height={40} />
       </button>
 
       <ul className={`nav-burger ${showMenu ? "show" : ""}`}>

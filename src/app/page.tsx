@@ -1,15 +1,17 @@
-import MainContent from "./pages/HomePage";
+"use client";
 import "./App.css";
-import "./pages/RecentWorks/RecentWorks.css";
-import "./assets/css/slide-up.css";
-import "./assets/css/scroll-to-top.css";
-import { RecentWorks } from "./pages/RecentWorks";
-import CardImage from "./components/ui/CardImage";
-import Mahanagar from "../public/mahanagar.jpg";
-import Contact from "./pages/Contact";
+import "./index.css";
+import "../assets/css/RecentWorks.css";
+import "../assets/css/slide-up.css";
+import "../assets/css/scroll-to-top.css";
 import { useState, useEffect, useRef } from "react";
-import UpIcon from "./assets/icons/up.svg";
-import NavBar from "./components/ui/NavBar/NavBar";
+import UpIcon from "../assets/icons/up.svg";
+import MainContent from "@/components/MainContent";
+import Image from "next/image";
+import CardImage from "@/components/CardImage";
+import NavBar from "@/components/NavBar/NavBar";
+import Contact from "@/components/Contact";
+import { RecentWorks } from "@/components/RecentWorks/RecentWorks";
 
 function App() {
   const [showButton, setShowButton] = useState(false);
@@ -76,7 +78,7 @@ function App() {
         className={`scroll-to-top-button ${showButton ? "visible" : ""}`}
         onClick={scrollToTop}
       >
-        <img src={UpIcon} alt="up icon" width={20} height={"auto"} />
+        <Image src={UpIcon} alt="up icon" width={20} height={20} />
       </button>
       <NavBar />
       <div className="main" id="home">
@@ -85,31 +87,39 @@ function App() {
         <div className="short-stories">
           <h3>SHORT STORIES</h3>
           <p>
-            Manjushree Thapa's short stories have appeared in Manoa, Tampa
-            Review, The Journal, Artful Dodge, Bellingham Review, Other Voices,
-            Himal South Asian and Studies in Nepali History and Society.
+            Manjushree s short stories have appeared in Manoa, Tampa Review, The
+            Journal, Artful Dodge, Bellingham Review, Other Voices, Himal South
+            Asian and Studies in Nepali History and Society.
           </p>
         </div>
         <div className="recent-works-wrapper" id="nonfiction">
           <h2>Non-Fiction</h2>
           <div className="recent-works">
             <CardImage
-              imageUrl={Mahanagar}
+              imageUrl={
+                "https://pub-0198217282574dada06155209c57c678.r2.dev/mahanagar.jpg"
+              }
               title="Beautiful Sunset"
               description="A stunning view of the sunset over the mountains."
             />
             <CardImage
-              imageUrl={Mahanagar}
+              imageUrl={
+                "https://pub-0198217282574dada06155209c57c678.r2.dev/mahanagar.jpg"
+              }
               title="City Skyline"
               description="An impressive city skyline at night."
             />
             <CardImage
-              imageUrl={Mahanagar}
+              imageUrl={
+                "https://pub-0198217282574dada06155209c57c678.r2.dev/mahanagar.jpg"
+              }
               title="City Skyline"
               description="An impressive city skyline at night."
             />
             <CardImage
-              imageUrl={Mahanagar}
+              imageUrl={
+                "https://pub-0198217282574dada06155209c57c678.r2.dev/mahanagar.jpg"
+              }
               title="City Skyline"
               description="An impressive city skyline at night."
             />
