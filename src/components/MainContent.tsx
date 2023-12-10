@@ -35,7 +35,7 @@ const MainContent = ({ slideRef }: Props) => {
           className="avatar"
           width={100}
           height={100}
-          quality={100}
+          quality={70}
         />
       </section>
     </div>
