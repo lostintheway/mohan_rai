@@ -14,7 +14,7 @@ function CardImage({ imageUrl, title, description }: Props) {
         <Image src={imageUrl} alt={title} width={210} height={320} />
         <div className="overlay">
           <b>{title}</b>
-          <p>{description}</p>
+          <p className="text-sm">{description}</p>
         </div>
       </div>
     </div>

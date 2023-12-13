@@ -35,8 +35,8 @@ const NavBar = () => {
     <div className="nav-wrapper">
       <ul className="navbar">
         <ScrollTo title="HOME" targetId="home" />
-        <ScrollTo title="FICTION" targetId="fiction" />
-        <ScrollTo title="NONFICTION" targetId="nonfiction" />
+        <ScrollTo title="WORKS" targetId="works" />
+        <ScrollTo title="ABOUT ME" targetId="about ME" />
 
         <li>TRANSLATION</li>
         <li>OTHER WORK</li>
@@ -49,15 +49,11 @@ const NavBar = () => {
       <ul className={`nav-burger ${showMenu ? "show" : ""}`}>
         <ScrollTo onClick={handleBurgerClick} title="HOME" targetId="home" />
 
+        <ScrollTo onClick={handleBurgerClick} title="WORKS" targetId="works" />
         <ScrollTo
           onClick={handleBurgerClick}
-          title="FICTION"
-          targetId="fiction"
-        />
-        <ScrollTo
-          onClick={handleBurgerClick}
-          title="NONFICTION"
-          targetId="nonfiction"
+          title="ABOUT ME"
+          targetId="aboutme"
         />
 
         <li>TRANSLATION</li>

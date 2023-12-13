@@ -10,8 +10,10 @@ import MainContent from "@/components/MainContent";
 import Image from "next/image";
 import CardImage from "@/components/CardImage";
 import NavBar from "@/components/NavBar/NavBar";
-import Contact from "@/components/Contact";
+import Contact from "@/components/Contact/Contact";
 import { RecentWorks } from "@/components/RecentWorks/RecentWorks";
+import AboutMe from "@/components/ui/AboutMe";
+import { Publications } from "@/components/ui/Publications";
 
 function App() {
   const [showButton, setShowButton] = useState(false);
@@ -84,48 +86,12 @@ function App() {
       <div className="main" id="home">
         <MainContent slideRef={slideUpRef} />
         <RecentWorks />
-        <div className="short-stories">
-          <h3>SHORT STORIES</h3>
-          <p>
-            Manjushree s short stories have appeared in Manoa, Tampa Review, The
-            Journal, Artful Dodge, Bellingham Review, Other Voices, Himal South
-            Asian and Studies in Nepali History and Society.
-          </p>
-        </div>
+
+        <AboutMe />
         <div className="recent-works-wrapper" id="nonfiction">
-          <h2>Non-Fiction</h2>
-          <div className="recent-works">
-            <CardImage
-              imageUrl={
-                "https://pub-0198217282574dada06155209c57c678.r2.dev/mahanagar.jpg"
-              }
-              title="Beautiful Sunset"
-              description="A stunning view of the sunset over the mountains."
-            />
-            <CardImage
-              imageUrl={
-                "https://pub-0198217282574dada06155209c57c678.r2.dev/mahanagar.jpg"
-              }
-              title="City Skyline"
-              description="An impressive city skyline at night."
-            />
-            <CardImage
-              imageUrl={
-                "https://pub-0198217282574dada06155209c57c678.r2.dev/mahanagar.jpg"
-              }
-              title="City Skyline"
-              description="An impressive city skyline at night."
-            />
-            <CardImage
-              imageUrl={
-                "https://pub-0198217282574dada06155209c57c678.r2.dev/mahanagar.jpg"
-              }
-              title="City Skyline"
-              description="An impressive city skyline at night."
-            />
-          </div>
-          <Contact slideRef={slideUpRef2} />
+          <Publications />
         </div>
+        <Contact slideRef={slideUpRef2} />
       </div>
     </div>
   );

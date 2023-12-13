@@ -15,12 +15,11 @@ const MainContent = ({ slideRef }: Props) => {
           <h4 style={{ color: "grey", marginTop: 5 }}>Film Director</h4>
           <p>
             Hello, reaching out to discuss potential collaboration opportunities
-            as a fellow film developer. s explore how our shared passion can
-            lead to exciting projects.
+            as a fellow film developers. explore how our shared passion can lead
+            to exciting projects.
           </p>
-          My latest movie is
-          <h4>All of Us in Our Own Lives</h4>I am currently at work on a novel
-          and a mixed-media work of nonfiction.
+          My latest movie is <b>All of Us in Our Own Lives</b>I am currently at
+          work on a novel and a mixed-media work of nonfiction.
         </div>
         {/* <div className="latest-work">
           <h4>Latest Work:</h4>
@@ -29,13 +28,13 @@ const MainContent = ({ slideRef }: Props) => {
       <section>
         <Image
           src={
-            "https://pub-0198217282574dada06155209c57c678.r2.dev/mohanraifinal.jpg"
+            "https://pub-0198217282574dada06155209c57c678.r2.dev/mohanrai.webp"
           }
           alt="Avatar"
           className="avatar"
           width={100}
           height={100}
-          quality={70}
+          quality={100}
         />
       </section>
     </div>
