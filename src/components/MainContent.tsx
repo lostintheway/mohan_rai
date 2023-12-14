@@ -35,7 +35,7 @@ const MainContent = ({ slideRef }: Props) => {
       <section>
         <Image
           src={
-            "https://pub-0198217282574dada06155209c57c678.r2.dev/mohan_rai.webp"
+            "https://pub-0198217282574dada06155209c57c678.r2.dev/mohan_rai.jpg"
           }
           alt="Avatar"
           className="avatar"
