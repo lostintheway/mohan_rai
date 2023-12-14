@@ -8,9 +8,9 @@
 }
 
 .recent-works-wrapper {
-  padding-top: 50px;
+  padding-top: 20px;
 
-  border-top: 1px solid var(--border-bottom);
+  border-top: 1px solid #94a3b8;
   background-color: white;
   width: 100%;
   display: flex;

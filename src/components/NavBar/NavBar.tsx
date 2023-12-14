@@ -35,11 +35,10 @@ const NavBar = () => {
     <div className="nav-wrapper">
       <ul className="navbar">
         <ScrollTo title="HOME" targetId="home" />
-        <ScrollTo title="WORKS" targetId="works" />
-        <ScrollTo title="ABOUT ME" targetId="about ME" />
+        <ScrollTo title="FILMOGRAPHY" targetId="filmography" />
+        <ScrollTo title="PUBLICATIONS" targetId="publications" />
+        <ScrollTo title="AWARDS" targetId="awards" />
 
-        <li>TRANSLATION</li>
-        <li>OTHER WORK</li>
         <ScrollTo title="CONTACT" targetId="contact" />
       </ul>
       <button id="burger-menu" onClick={handleMenu}>
@@ -49,11 +48,15 @@ const NavBar = () => {
       <ul className={`nav-burger ${showMenu ? "show" : ""}`}>
         <ScrollTo onClick={handleBurgerClick} title="HOME" targetId="home" />
 
-        <ScrollTo onClick={handleBurgerClick} title="WORKS" targetId="works" />
         <ScrollTo
           onClick={handleBurgerClick}
-          title="ABOUT ME"
-          targetId="aboutme"
+          title="FILMOGRAPHY"
+          targetId="filmography"
+        />
+        <ScrollTo
+          onClick={handleBurgerClick}
+          title="AWARDS"
+          targetId="awards"
         />
 
         <li>TRANSLATION</li>

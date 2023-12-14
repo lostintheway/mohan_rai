@@ -4,7 +4,7 @@ import "./RecentWorks.css";
 
 export function RecentWorks() {
   return (
-    <div className="recent-works-wrapper" id="works">
+    <div className="recent-works-wrapper" id="filmography">
       <h2 className="pb-8">FILMOGRAPHY</h2>
       <div className="recent-works">
         <CardImage

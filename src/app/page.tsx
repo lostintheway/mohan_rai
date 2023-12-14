@@ -16,6 +16,7 @@ import AboutMe from "@/components/ui/AboutMe";
 import { Publications } from "@/components/ui/Publications";
 import { WorkDetails } from "@/components/ui/WorkDetails";
 import { BookDetails } from "@/components/ui/BookDetails";
+import { Awards } from "@/components/ui/Awards";
 
 function App() {
   const [showButton, setShowButton] = useState(false);
@@ -90,10 +91,13 @@ function App() {
         <RecentWorks />
 
         <WorkDetails />
-        <div className="recent-works-wrapper" id="nonfiction">
+        <div className="recent-works-wrapper" id="publications">
           <Publications />
         </div>
         <BookDetails />
+        <div className="recent-works-wrapper" id="awards">
+          <Awards />
+        </div>
         <Contact slideRef={slideUpRef2} />
       </div>
     </div>

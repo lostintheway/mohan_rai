@@ -18,8 +18,15 @@ const MainContent = ({ slideRef }: Props) => {
             as a fellow film developers. explore how our shared passion can lead
             to exciting projects.
           </p>
-          My latest movie is <b>All of Us in Our Own Lives</b>I am currently at
-          work on a novel and a mixed-media work of nonfiction.
+          My latest movie is{" "}
+          <a
+            className="text-blue-500 underline"
+            // style={{ color: "blue",  }}
+            href="https://youtu.be/7RKwkS8ZgDM?si=axUanZpWKA2J0tV0"
+          >
+            Mahanagar
+          </a>
+          .
         </div>
         {/* <div className="latest-work">
           <h4>Latest Work:</h4>
@@ -34,7 +41,7 @@ const MainContent = ({ slideRef }: Props) => {
           className="avatar"
           width={100}
           height={100}
-          quality={100}
+          quality={80}
         />
       </section>
     </div>

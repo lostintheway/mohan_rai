@@ -1,6 +1,6 @@
 export const WorkDetails = () => {
   return (
-    <div className="px-[10%]">
+    <div className="px-[10%] pb-10">
       <div className="pb-5">
         <h4 className="text-black pb-2 font-bold">
           Sahki: Story of friends who could have been enemies.{" "}
