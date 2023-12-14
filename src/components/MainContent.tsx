@@ -15,7 +15,7 @@ const MainContent = ({ slideRef }: Props) => {
           <h4 style={{ color: "grey", marginTop: 5 }}>Film Director</h4>
           <p>
             Hello, reaching out to discuss potential collaboration opportunities
-            as a fellow film developers. explore how our shared passion can lead
+            as a fellow film developers, explore how our shared passion can lead
             to exciting projects.
           </p>
           My latest movie is{" "}
@@ -37,7 +37,7 @@ const MainContent = ({ slideRef }: Props) => {
           src={
             "https://pub-0198217282574dada06155209c57c678.r2.dev/mohan_rai.jpg"
           }
-          alt="Avatar"
+          alt="mohan rai"
           className="avatar"
           width={100}
           height={100}
