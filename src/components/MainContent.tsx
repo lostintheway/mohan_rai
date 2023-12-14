@@ -39,9 +39,10 @@ const MainContent = ({ slideRef }: Props) => {
           }
           alt="mohan rai"
           className="avatar"
-          width={100}
-          height={100}
-          priority
+          width={400}
+          height={371}
+          quality={88}
+          // priority
         />
       </section>
     </div>
