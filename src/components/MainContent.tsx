@@ -35,13 +35,13 @@ const MainContent = ({ slideRef }: Props) => {
       <section>
         <Image
           src={
-            "https://pub-0198217282574dada06155209c57c678.r2.dev/mohan_rai.jpg"
+            "https://pub-0198217282574dada06155209c57c678.r2.dev/mohan_rai_sm.webp"
           }
           alt="mohan rai"
           className="avatar"
           width={100}
           height={100}
-          quality={100}
+          priority
         />
       </section>
     </div>
