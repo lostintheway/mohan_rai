@@ -15,8 +15,8 @@ export default function AboutMe() {
         </p>
         <p className="pb-4">
           <span style={{}}>
-            He has written and directed several documentary films. His
-            documentary film &quot;
+            Member of Film Director&apos;s Guild of Nepal, he has written and
+            directed several documentary films. His documentary film &quot;
           </span>
           <em>
             <span style={{}}>

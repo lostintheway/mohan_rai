@@ -11,7 +11,9 @@ const MainContent = ({ slideRef }: Props) => {
     <div className="main-wrapper">
       <div className={"main-content"}>
         <div ref={slideRef} className="slide-up-container">
-          <h1 style={{ fontSize: 40, marginBottom: 0 }}>Mohan Rai</h1>
+          <h1 style={{ fontSize: 40, marginBottom: 0, fontWeight: 600 }}>
+            Mohan Rai
+          </h1>
           <h4 style={{ color: "grey", marginTop: 5 }}>Film Director</h4>
           <p>
             Hello, reaching out to discuss potential collaboration opportunities
@@ -40,8 +42,9 @@ const MainContent = ({ slideRef }: Props) => {
           alt="mohan rai"
           className="avatar"
           width={400}
-          height={371}
+          height={300}
           quality={88}
+          // objectFit="cover"
           // priority
         />
       </section>
