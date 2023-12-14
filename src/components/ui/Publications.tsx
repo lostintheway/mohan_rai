@@ -3,7 +3,7 @@ import CardImage from "../CardImage";
 export function Publications() {
   return (
     <div className="recent-works w-full flex flex-col justify-center items-center">
-      <h2 className="pb-8">Publications</h2>
+      <h2 className="pb-8">PUBLICATIONS</h2>
       <div className="flex gap-10">
         <CardImage
           imageUrl={
