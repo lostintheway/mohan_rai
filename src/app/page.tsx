@@ -8,7 +8,6 @@ import { useState, useEffect, useRef } from "react";
 import UpIcon from "../assets/icons/up.svg";
 import MainContent from "@/components/MainContent";
 import Image from "next/image";
-import CardImage from "@/components/CardImage";
 import NavBar from "@/components/NavBar/NavBar";
 import Contact from "@/components/Contact/Contact";
 import { RecentWorks } from "@/components/RecentWorks/RecentWorks";
