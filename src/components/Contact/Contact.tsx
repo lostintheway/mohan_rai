@@ -30,7 +30,7 @@ const Contact = ({ slideRef }: Props) => {
       <div className="copyright relative">
         © Copyright - Mohan Rai 2023
         <div className="absolute text-gray-600 text-xs right-10 top-1">
-          <Link href={"/contact"}>contact</Link>
+          <Link href={"/contact"}>contact me</Link>
         </div>
       </div>
     </>

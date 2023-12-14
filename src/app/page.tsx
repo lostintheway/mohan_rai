@@ -14,8 +14,8 @@ import Contact from "@/components/Contact/Contact";
 import { RecentWorks } from "@/components/RecentWorks/RecentWorks";
 import AboutMe from "@/components/ui/AboutMe";
 import { Publications } from "@/components/ui/Publications";
-import { WorkDetails } from "@/components/ui/WorkDetails";
-import { BookDetails } from "@/components/ui/BookDetails";
+import { FilmographyDetails } from "@/components/ui/FilmographyDetails";
+import { PublicationDetails } from "@/components/ui/PublicationDetails";
 import { Awards } from "@/components/ui/Awards";
 
 function App() {
@@ -90,13 +90,16 @@ function App() {
         <MainContent slideRef={slideUpRef} />
         <RecentWorks />
 
-        <WorkDetails />
+        <FilmographyDetails />
         <div className="recent-works-wrapper" id="publications">
           <Publications />
         </div>
-        <BookDetails />
+        <PublicationDetails />
         <div className="recent-works-wrapper" id="awards">
           <Awards />
+        </div>
+        <div className="recent-works-wrapper" id="aboutme">
+          <AboutMe />
         </div>
         <Contact slideRef={slideUpRef2} />
       </div>

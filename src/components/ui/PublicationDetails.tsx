@@ -1,6 +1,6 @@
-export const BookDetails = () => {
+export const PublicationDetails = () => {
   return (
-    <div className="pb-[5%]">
+    <div className="p-[5%] ">
       <h4 className="text-black pb-2 font-bold">Juxtaposition</h4>
       <p>
         <em>

@@ -38,6 +38,7 @@ const NavBar = () => {
         <ScrollTo title="FILMOGRAPHY" targetId="filmography" />
         <ScrollTo title="PUBLICATIONS" targetId="publications" />
         <ScrollTo title="AWARDS" targetId="awards" />
+        <ScrollTo title="ABOUT ME" targetId="aboutme" />
 
         <ScrollTo title="CONTACT" targetId="contact" />
       </ul>
@@ -58,9 +59,6 @@ const NavBar = () => {
           title="AWARDS"
           targetId="awards"
         />
-
-        <li>TRANSLATION</li>
-        <li>OTHER WORK</li>
         <ScrollTo
           onClick={handleBurgerClick}
           title="CONTACT"
