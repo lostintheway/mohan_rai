@@ -46,13 +46,18 @@ const NavBar = () => {
         <Image src={MenuIcon} alt="" width={40} height={40} />
       </button>
 
-      <ul className={`nav-burger ${showMenu ? "show" : ""}`}>
+      <ul className={`nav-burger ${showMenu ? "show" : "hidden"}`}>
         <ScrollTo onClick={handleBurgerClick} title="HOME" targetId="home" />
 
         <ScrollTo
           onClick={handleBurgerClick}
           title="FILMOGRAPHY"
           targetId="filmography"
+        />
+        <ScrollTo
+          onClick={handleBurgerClick}
+          title="PUBLICATIONS"
+          targetId="publications"
         />
         <ScrollTo
           onClick={handleBurgerClick}

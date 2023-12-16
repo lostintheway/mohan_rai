@@ -3,7 +3,7 @@ export const Awards = () => {
     <div className="border-gray-300">
       <>
         <h2 className="pb-8 text-center">AWARDS</h2>
-        <p>
+        <p className="px-[2%]">
           <span style={{ fontSize: "small" }}>
             One Night in Kathmandu received several awards nationally and
             internationally.{" "}
@@ -11,7 +11,7 @@ export const Awards = () => {
         </p>
         <p>&nbsp;</p>
         <table
-          width={798}
+          // width={798}
           cellSpacing={0}
           cellPadding={9}
           className="overflow-x-auto"
