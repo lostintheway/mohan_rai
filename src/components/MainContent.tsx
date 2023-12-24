@@ -22,8 +22,6 @@ const MainContent = ({ slideRef }: Props) => {
             the craft of filmmaking, educating people about cinema, and
             celebrating the magic of cinema.
           </p>
-          I am the founding Chairperson of Centre for Cinematic Arts (CCA), a
-          non-profit dedicated to cinema. .
         </div>
         {/* <div className="latest-work">
           <h4>Latest Work:</h4>

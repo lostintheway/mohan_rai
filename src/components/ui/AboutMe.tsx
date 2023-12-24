@@ -47,7 +47,8 @@ export default function AboutMe() {
           Union Film Festival for the past three years, now in its 13th edition.
         </p>
         <p className="pb-4">
-          He is also the Managing Director of{" "}
+          He is also the founding Chairperson of Centre for Cinematic Arts
+          (CCA), a non-profit dedicated to cinema, and the Managing Director of{" "}
           <a
             target="_blank"
             rel="noreferrer noopener"
