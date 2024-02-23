@@ -6,10 +6,8 @@ const noto = Noto_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Mohan Rai Profile Middleway Films",
-  description: `Mohan Rai Middleway Films is a prominent filmmaker, educator, and film culture advocate in Nepal. 
-    His documentary Anjali and feature film Mahanagar earned international recognition and awards. 
-    Rai is also an editor, translator, and Festival Manager for the Nepal-European Union Film Festival. 
-    Leading Middleway Films, he organizes filmmaking courses and contributes significantly to Nepal's cinematic landscape.`,
+  description:
+    "Mohan Rai Nepalese filmmaker and advocate for cinema, editor, translator and festival manager. International recognition and awards for documentary Anjali, feature film Mahanagar. Leads Middleway Films, contributing to Nepal's film landscape.",
 };
 
 export default function RootLayout({
@@ -19,6 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <meta property="description" content="Search engine description" />
       <body className={noto.className}>{children}</body>
     </html>
   );
