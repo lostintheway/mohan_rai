@@ -7,7 +7,7 @@ export function Publications() {
       <div className="flex gap-10">
         <CardImage
           imageUrl={
-            "https://pub-0198217282574dada06155209c57c678.r2.dev/Mahanagar.webp"
+            "https://pub-0198217282574dada06155209c57c678.r2.dev/juxtaposition.jpg"
           }
           title=""
           description=""
