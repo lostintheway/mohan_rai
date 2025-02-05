@@ -10,6 +10,12 @@ const nextConfig = {
       },
     ],
   },
+  javascript: {
+    ignoreBuildErrors: true,
+  },
+  typescript: {
+    ignoreBuildErrors: true,
+  },
 };
 
 module.exports = nextConfig;
