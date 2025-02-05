@@ -11,10 +11,10 @@ const MainContent = ({ slideRef }: Props) => {
     <div className="main-wrapper">
       <div className={"main-content"}>
         <div ref={slideRef} className="slide-up-container">
-          <h1 style={{ fontSize: 40, marginBottom: 0, fontWeight: 600 }}>
+          <h1 className="text-center md:text-start" style={{ fontSize: 40, marginBottom: 0, fontWeight: 600 }}>
             Mohan Rai
           </h1>
-          <h4 style={{ color: "grey", marginTop: 5 }}>
+          <h4 className="text-center md:text-start" style={{ color: "grey", marginTop: 5 }}>
             Mohan Rai, Filmmaker, Film Educator and Activist
           </h4>
           <p>

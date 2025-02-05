@@ -1,24 +1,30 @@
 import Image from "next/image";
 import "./CardImage.css"; // Import your CSS file for styling
 
-type Props = {
+interface CardImageProps {
   imageUrl: string;
   title: string;
   description: string;
-};
+  className?: string;
+}
 
-function CardImage({ imageUrl, title, description }: Props) {
+export default function CardImage({
+  imageUrl,
+  title,
+  description,
+  className = "",
+}: CardImageProps) {
   return (
-    <div className="image-card-wrapper">
-      <div className="image-card">
-        <Image src={imageUrl} alt={title} width={210} height={320} />
-        <div className="overlay">
-          <b>{title}</b>
-          <p className="text-sm">{description}</p>
-        </div>
-      </div>
+    <div
+      className={`relative overflow-hidden rounded-lg cursor-pointer ${className}`}
+    >
+      <Image
+        width={300}
+        height={360}
+        src={imageUrl}
+        alt={title}
+        className=" object-cover"
+      />
     </div>
   );
 }
-
-export default CardImage;

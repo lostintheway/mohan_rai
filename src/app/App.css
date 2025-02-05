@@ -46,6 +46,9 @@ h3 {
   align-items: center;
   flex-flow: column;
 }
+p {
+  text-align: justify;
+}
 /* .logo {
   height: 6em;
   padding: 1.5em;
