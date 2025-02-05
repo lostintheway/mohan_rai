@@ -64,7 +64,7 @@ export function RecentWorks() {
           />
           <div className="space-y-6 w-[min(100vw,500px)] px-10 md:px-0">
             <h4 className="text-3xl font-bold text-gray-900 tracking-tight">
-              Anjali: How long can someone live in other's skin
+              Anjali: How long can someone live in other{"'"}s skin
             </h4>
             <p className="text-gray-600 leading-relaxed text-lg italic">
               Life, struggles and dreams of a transgender protagonists in Nepal
